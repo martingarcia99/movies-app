@@ -18,7 +18,7 @@ The API used to fetch movie information is **https://api.themoviedb.org.**
 
 1. Clone the contents of the **main branch** to your local device.
 2. Write on the terminal **npm install** to install all the packages needed.
-3. Then write **npx webpack serve** to run the app (build with webpack).
+3. Write **npx webpack serve** to run the app (built with webpack).
 
 ## Tests
 
@@ -27,7 +27,7 @@ The API used to fetch movie information is **https://api.themoviedb.org.**
 
 ## Devices where the application has been tested
 
-1. Google chrome navegator (Desktop and mobile versions).
+1. Google chrome (Desktop and mobile versions).
 
 
 

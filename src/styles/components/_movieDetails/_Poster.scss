@@ -1,0 +1,49 @@
+.poster {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: groove;
+    position: relative;
+    overflow: visible;
+
+    .category-movie{
+        position: absolute;
+        background-color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: groove;
+        top: -40px;
+        right: -40px;
+
+        &.popular {
+            color: #ff5733;
+            border-color: #ff5733;
+            border: dashed;
+        }
+        &.top_rated {
+            color: #33c4ff;
+            border-color: #33c4ff;
+            border: double;
+        }
+        &.upcoming {
+            color: #ff33a6;
+            border-color: #ff33a6;
+            border: dotted;
+        }
+    }
+    
+    img {
+      width: 300px;
+      height: 400px;
+    }
+
+    &.popular {
+        border-color: #ff5733;
+    }
+    &.top_rated {
+        border-color: #33c4ff;
+    }
+    &.upcoming {
+        border-color: #ff33a6;
+    }
+}

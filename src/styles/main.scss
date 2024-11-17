@@ -1,0 +1,71 @@
+@use 'variables';
+@use 'mixins';
+@use 'components/_movieDetails/_Container';
+@use 'components/_movieDetails/_Overlay';
+@use 'components/_movieDetails/_Content';
+@use 'components/_movieDetails/_Poster';
+@use 'components/_movieDetails/_Details';
+@use 'components/_Card.scss';
+@use 'components/_Carousel.scss';
+@use 'components/_Navbar.scss';
+@use 'components/_Wishlist.scss';
+@use 'components/_PopUp.scss';
+@use 'sass:color';
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app{
+    margin-top: 74px;
+    background-color: rgb(20, 20, 20);
+}
+
+.btn{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 0;
+    cursor: pointer;
+    width: auto;
+
+    &:hover {
+        background-color: #555;
+    }
+
+    &.popular {
+        background-color: #ff5733;
+
+        &:hover {
+            background-color: color.adjust(#ff5733, $lightness: -10%);
+        }
+    }
+    &.top_rated {
+        background-color: #33c4ff;
+
+        &:hover {
+            background-color: color.adjust(#33c4ff, $lightness: -10%);
+        }
+    }
+    &.upcoming {
+        background-color: #ff33a6;
+
+        &:hover {
+            background-color: color.adjust(#ff33a6, $lightness: -10%);
+        }
+    }
+}
+
+.btn-popular {
+    color: red;
+}
+.btn-top-rated {
+    color: green;
+}
+.btn-upcoming {
+    color: blue;
+}
+

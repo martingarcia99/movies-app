@@ -1,0 +1,39 @@
+.wishlist {
+    height: calc(100vh - 74px);
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    color: white;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 10px;
+        h2{
+            margin:0;
+            padding-left: 10px;
+        }
+    }
+
+    .empty-page{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: double;
+        width: fit-content;
+        padding: 3rem;
+
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

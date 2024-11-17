@@ -1,0 +1,40 @@
+.popup {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: top 0.5s ease-in-out;
+    z-index: 1000;
+    opacity: 0;
+    display: flex;
+    gap: 10px;
+
+    &.success{
+        background-color: rgb(53, 219, 109);
+      }
+    
+    &.error{
+        background-color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+}
+  
+  .popup-show {
+    top: 20px;
+    opacity: 1;
+  }
+  
+  .popup-hide {
+    top: -100px;
+    opacity: 0;
+  }
+
+  
+  

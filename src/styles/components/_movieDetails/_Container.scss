@@ -1,0 +1,25 @@
+.container {
+    width: 100vw;
+    height: calc(100vh - 74px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.popular {
+        font-family:  'Arial';
+    }
+    &.top_rated {
+        font-family:  'Courier New';
+    }
+    &.upcoming {
+        font-family:  'Georgia';
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+}

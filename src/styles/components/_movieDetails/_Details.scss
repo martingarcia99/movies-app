@@ -1,0 +1,36 @@
+.details {
+    color: white;
+    width: 83.33%;
+    @media (min-width: 768px) {
+      max-width: 80rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        .year {
+          font-weight: normal;
+        }
+      }
+
+      .info {
+        font-size: 1rem;
+        color: #d4d4d8;
+      }
+
+      .genres {
+        list-style-type: disc;
+        padding-left: 1.25rem;
+      }
+
+      .overview-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        .overview-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+    }
+}
